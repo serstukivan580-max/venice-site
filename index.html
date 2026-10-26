@@ -51,7 +51,7 @@ button{font:inherit;color:inherit;background:none;border:0;border-radius:0;paddi
 @keyframes draw{to{stroke-dashoffset:0}}
 @keyframes fillin{to{fill:var(--ink)}}
 .arch .sub{font-family:var(--tx);font-size:15px;font-weight:700;letter-spacing:14px}
-.stage{position:relative;display:flex;justify-content:center;align-items:flex-end;gap:0;margin-top:-90px;height:clamp(300px,42vw,520px)}
+.stage{position:relative;display:flex;justify-content:center;align-items:flex-end;gap:0;margin-top:calc(-1*clamp(16px,6vw,90px));height:clamp(300px,42vw,520px)}
 .stage .gm{width:min(46%,380px);height:100%;filter:drop-shadow(0 18px 18px var(--shadow))}
 .stage .l{transform:translateX(18px) rotate(-6deg);animation:fl 7s ease-in-out infinite}
 .stage .r{transform:translateX(-18px) rotate(5deg);animation:fr 7s ease-in-out infinite;z-index:1}
@@ -183,7 +183,7 @@ button{font:inherit;color:inherit;background:none;border:0;border-radius:0;paddi
 .rc span:last-child{text-align:right;font-weight:600;overflow-wrap:anywhere}
 .toast{position:fixed;left:50%;bottom:24px;z-index:200;max-width:calc(100% - 32px);padding:14px 20px;background:var(--ink);color:var(--cream);font-size:13px;font-weight:600;transform:translate(-50%,calc(100% + 60px));visibility:hidden;transition:visibility .3s,transform .35s var(--e)}
 .toast.on{transform:translate(-50%,0);visibility:visible}
-@media (max-width:719px){.nav a:not(:first-child){display:none}.ig{display:none}.logo b{font-size:24px}.stage{margin-top:-46px}.stamp{width:84px;height:84px;top:18px}}
+@media (max-width:719px){.nav a:not(:first-child){display:none}.ig{display:none}.logo b{font-size:24px}.stamp{width:84px;height:84px;top:18px}}
 @media (min-width:720px){.g{padding-left:max(44px,env(safe-area-inset-left,0px));padding-right:max(44px,env(safe-area-inset-right,0px))}.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:48px 24px}.mb{grid-template-columns:1.1fr 1fr}.mb>.ph{position:sticky;top:0;align-self:start}.md{padding:44px 36px}.ab{grid-template-columns:1.1fr 1fr;gap:64px}.sec{padding-block:96px}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.arch .big{fill:var(--ink);stroke-dashoffset:0}html{scroll-behavior:auto}}
 </style>
